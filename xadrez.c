@@ -3,7 +3,7 @@
 /*
  * Simulação de movimentos de peças de xadrez usando estruturas de repetição
  * Desenvolvido para o desafio: "Movimentando as Peças do Xadrez"
- * Linguagem: C | Nível: Novato
+ * Linguagem: C | Nível: Novato / Aventureiro
  */
 
 int main() {
@@ -34,6 +34,26 @@ int main() {
         printf("Esquerda\n");
         contador_rainha++;
     } while (contador_rainha <= 8);
+
+    // =============================
+    // Movimento do Cavalo (FOR + WHILE)
+    // =============================
+    printf("\nMovimento do Cavalo (2 casas para baixo e 1 para a esquerda):\n");
+
+    int movimentos_baixo = 2;
+    int movimentos_esquerda = 1;
+
+    // FOR para mover 2 casas para baixo
+    for (int i = 0; i < movimentos_baixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // WHILE para mover 1 casa para a esquerda
+    int j = 0;
+    while (j < movimentos_esquerda) {
+        printf("Esquerda\n");
+        j++;
+    }
 
     return 0;
 }
